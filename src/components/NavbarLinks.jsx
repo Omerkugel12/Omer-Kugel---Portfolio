@@ -20,7 +20,7 @@ function NavbarLinks() {
             >
               {link.link}
             </a>
-            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500 "></div>
           </li>
         );
       })}
