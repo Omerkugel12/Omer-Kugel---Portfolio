@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,html}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
-    fontFamily: {
-      body: ["Josefin Sans"],
-      special: ["Roboto"],
+    screens: {
+      sm: "350px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     colors: {
       brown: "#53423e",
@@ -22,6 +27,13 @@ export default {
       grey: "#626965",
       lightGrey: "#978580",
       darkGrey: "#3f4441",
+    },
+    extend: {
+      boxShadow: { cyanShadow: "0px 0px 20px 0px rgba(94,226,220,0.5)" },
+    },
+    fontFamily: {
+      body: ["Josefin Sans"],
+      special: ["Roboto"],
     },
   },
   plugins: [],
