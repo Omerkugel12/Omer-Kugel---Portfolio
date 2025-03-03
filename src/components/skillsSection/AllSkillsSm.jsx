@@ -10,7 +10,6 @@ import { SiMongodb } from "react-icons/si";
 import { RiFirebaseLine } from "react-icons/ri";
 import { LiaNodeJs } from "react-icons/lia";
 import { FaGitAlt } from "react-icons/fa";
-import SingleSkill from "./SingleSkill";
 
 const skills = [
   { skill: "HTML", icon: AiOutlineHtml5 },
@@ -26,16 +25,19 @@ const skills = [
   { skill: "GIT", icon: FaGitAlt },
 ];
 
-function AllSkills() {
+function AllSkillsSm() {
   return (
-    <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
+    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12">
       {skills.map((skill) => {
         return (
-          <SingleSkill
-            key={skill.skill}
-            text={skill.skill}
-            imgSvg={<skill.icon />}
-          />
+          <div key={skill.skill} className="flex flex-col items-center">
+            <div className="text-7xl text-orange">
+              <skill.icon />
+            </div>
+            <p className="text-center mt-4 text-white font-body">
+              {skill.skill}
+            </p>
+          </div>
         );
       })}
       <div>
@@ -45,4 +47,4 @@ function AllSkills() {
   );
 }
 
-export default AllSkills;
+export default AllSkillsSm;
