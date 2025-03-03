@@ -40,9 +40,6 @@ function AllSkillsSm() {
           </div>
         );
       })}
-      <div>
-        <img src="" alt="" />
-      </div>
     </div>
   );
 }

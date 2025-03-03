@@ -38,9 +38,6 @@ function AllSkills() {
           />
         );
       })}
-      <div>
-        <img src="" alt="" />
-      </div>
     </div>
   );
 }
