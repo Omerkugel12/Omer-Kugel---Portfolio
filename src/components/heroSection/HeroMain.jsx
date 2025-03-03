@@ -10,7 +10,6 @@ function HeroMain() {
         <HeroText />
         <HeroPic />
       </div>
-      <HeroGradient />
     </main>
   );
 }
