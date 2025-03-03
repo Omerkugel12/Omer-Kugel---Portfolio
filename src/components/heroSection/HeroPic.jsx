@@ -10,7 +10,7 @@ function HeroPic() {
         className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-full border-[1px] border-cyan "
       />
       <div className="absolute -z-10 flex justify-center items-center animate-pulse">
-        <PiHexagonThin className="md:w-[650px] md:h-[650px] w-[400px] h-[400px] text-cyan blur-md animate-[spin_20s_linear_infinite]" />
+        <PiHexagonThin className="md:w-[600px] md:h-[600px] w-[350px] h-[350px] text-cyan blur-md animate-[spin_20s_linear_infinite]" />
       </div>
     </div>
   );
