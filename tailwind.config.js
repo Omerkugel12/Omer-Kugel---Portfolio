@@ -29,7 +29,11 @@ export default {
       darkGrey: "#3f4441",
     },
     extend: {
-      boxShadow: { cyanShadow: "0px 0px 20px 0px rgba(94,226,220,0.5)" },
+      boxShadow: {
+        cyanShadow: "0px 0px 20px 0px rgba(94,226,220,0.5)",
+        cyanMediumShadow: "10px 10px 200px 150px rgba(94,206,220,0.5)",
+        orangeMediumShadow: "10px 10px 200px 150px rgba(240,169,79,0.5)",
+      },
     },
     fontFamily: {
       body: ["Josefin Sans"],
