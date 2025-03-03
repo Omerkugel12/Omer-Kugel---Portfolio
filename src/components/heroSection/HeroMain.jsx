@@ -1,6 +1,7 @@
 import React from "react";
 import HeroText from "./HeroText";
 import HeroPic from "./HeroPic";
+import HeroGradient from "./HeroGradient";
 
 function HeroMain() {
   return (
@@ -9,6 +10,7 @@ function HeroMain() {
         <HeroText />
         <HeroPic />
       </div>
+      <HeroGradient />
     </main>
   );
 }
