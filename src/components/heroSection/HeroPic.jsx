@@ -5,7 +5,7 @@ function HeroPic() {
   return (
     <div className="h-full flex items-center justify-center">
       <img
-        src="../../../public/hero image.svg"
+        src="../../../public/heroImage.png"
         alt="Omer Kugel"
         className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-full border-[1px] border-cyan "
       />
