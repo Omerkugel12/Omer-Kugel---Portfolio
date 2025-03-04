@@ -1,5 +1,5 @@
 import AboutMeMain from "./components/aboutMeSection/AboutMeMain";
-import ExperienceMain from "./components/experienceSection/experienceMain";
+import ExperienceMain from "./components/experienceSection/ExperienceMain";
 import HelperSection from "./components/HelperSection";
 import HeroGradient from "./components/heroSection/HeroGradient";
 import HeroMain from "./components/heroSection/HeroMain";
