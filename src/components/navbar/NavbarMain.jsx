@@ -13,16 +13,13 @@ function NavbarMain() {
 
   return (
     <nav className="max-w-[1300px] mx-auto px-4 w-full fixed left-[50%] -translate-x-[50%] z-20 flex gap-4 mt-2">
-      <a
-        href="#home"
-        className="flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center p-6 rounded-r-full rounded-l-full border-[0.5px] border-orange"
-      >
+      <div className="flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center p-6 rounded-r-full rounded-l-full border-[0.5px] border-orange">
         <NavbarLogo />
         <div className={`${menuOpen ? "sm:block" : "sm:hidden"} lg:block`}>
           <NavbarLinks />
         </div>
         <NavbarBtn />
-      </a>
+      </div>
       <div className="flex lg:hidden sm:block p-6 bg-black items-center justify-center border-[0.5px] border-orange rounded-full">
         <button
           className="text-2xl text-white border-[0.5px] border-orange rounded-full p-3"
