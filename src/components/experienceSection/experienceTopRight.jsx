@@ -3,7 +3,7 @@ import React from "react";
 function ExperienceTopRight() {
   return (
     <div>
-      <div className="w-[500px] text-lightGrey font-body border border-brown rounded-2xl p-6 leading-8">
+      <div className="max-w-[500px] text-lightGrey font-body border border-brown rounded-2xl p-6 leading-8">
         Throughout my journey as a full-stack developer, I've worked on diverse
         projects that challenged me to solve complex problems and build scalable
         solutions. From developing responsive web applications to optimizing
