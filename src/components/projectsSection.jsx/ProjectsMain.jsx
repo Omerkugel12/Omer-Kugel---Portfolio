@@ -35,7 +35,7 @@ function ProjectsMain() {
   return (
     <div id="projects" className="pt-40 pb-16 max-w-[1200px] mx-auto">
       <ProjectsText />
-      <div className="max-w-[900px] mx-auto mt-20">
+      <div className="lg:max-w-[900px] mx-auto px-10 mt-20 flex flex-col gap-20 sm:max-w-full">
         {projects.map((project, i) => {
           return <SingleProject key={i} project={project} />;
         })}
