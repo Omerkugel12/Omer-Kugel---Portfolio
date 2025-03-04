@@ -3,7 +3,7 @@ import React from "react";
 function AboutMeText() {
   return (
     <div className="flex flex-col md:items-start sm:items-center md:text-left md:w-[70%]">
-      <h2 className="text-cyan text-5xl font-special mb-10">About Me</h2>
+      <h2 className="text-cyan text-5xl font-body mb-10">About Me</h2>
       <p className="text-white font-body mb-10">
         Hey, I'm Omer Kugel, a full-stack developer with a passion for creating
         innovative solutions and tackling challenging projects in the world of
