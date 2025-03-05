@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function NavbarLinks({ setMenuOpen }) {
   const links = [
@@ -14,13 +15,17 @@ function NavbarLinks({ setMenuOpen }) {
       {links.map((link) => {
         return (
           <li key={link.section} className="group">
-            <a
-              href={`#${link.section}`}
+            <Link
+              to={link.section}
+              spy={true}
+              smooth={true}
+              offset={-130}
+              duration={500}
               className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
               onClick={() => setMenuOpen(false)}
             >
               {link.link}
-            </a>
+            </Link>
             <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500 "></div>
           </li>
         );
