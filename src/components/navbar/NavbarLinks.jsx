@@ -1,6 +1,6 @@
 import React from "react";
 
-function NavbarLinks() {
+function NavbarLinks({ setMenuOpen }) {
   const links = [
     { link: "About Me", section: "about" },
     { link: "Skills", section: "skills" },
@@ -17,6 +17,7 @@ function NavbarLinks() {
             <a
               href={`#${link.section}`}
               className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
+              onClick={() => setMenuOpen(false)}
             >
               {link.link}
             </a>
