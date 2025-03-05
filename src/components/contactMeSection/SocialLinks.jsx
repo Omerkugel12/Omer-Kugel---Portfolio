@@ -1,12 +1,12 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { LuGithub } from "react-icons/lu";
 
 const socials = [
   {
     key: "linkedin",
-    icon: CiLinkedin,
+    icon: FaLinkedinIn,
     link: "https://www.linkedin.com/in/omerkugel-fullstack",
   },
   {
@@ -16,7 +16,7 @@ const socials = [
   },
   {
     key: "github",
-    icon: FaGithub,
+    icon: LuGithub,
     link: "https://github.com/Omerkugel12",
   },
 ];

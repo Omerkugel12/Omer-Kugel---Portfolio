@@ -3,7 +3,7 @@ import ContactMeForm from "./ContactMeForm";
 
 function ContactMeLeft() {
   return (
-    <div className="font-body">
+    <div className="font-body flex flex-col w-full">
       <h2 className="text-orange text-4xl font-body">Get In Touch</h2>
       <p className="text-white mt-6">
         Feel free to reach out if you'd like to collaborate.

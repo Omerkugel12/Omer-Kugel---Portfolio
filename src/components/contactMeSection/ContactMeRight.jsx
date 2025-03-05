@@ -6,7 +6,7 @@ function ContactMeRight() {
   return (
     <div className="flex flex-col items-center">
       <div className="max-w-[300px]">
-        <img src="/public/email-image.png" alt="Contact Me Image" />
+        <img src="/email-image.png" alt="Contact Me Image" />
       </div>
       <div className="mt-10">
         <ContactMeInfo />
