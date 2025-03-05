@@ -1,6 +1,7 @@
 import AboutMeMain from "./components/aboutMeSection/AboutMeMain";
 import ContactMeMain from "./components/contactMeSection/ContactMeMain";
 import ExperienceMain from "./components/experienceSection/ExperienceMain";
+import FooterMain from "./components/footerSection/FooterMain";
 import HelperSection from "./components/HelperSection";
 import HeroGradient from "./components/heroSection/HeroGradient";
 import HeroMain from "./components/heroSection/HeroMain";
@@ -23,7 +24,8 @@ function App() {
       <ExperienceMain />
       <ProjectsMain />
       <ContactMeMain />
-      <HelperSection />
+      <div className="w-full h-1 bg-grey mt-10"></div>
+      <FooterMain />
     </main>
   );
 }
