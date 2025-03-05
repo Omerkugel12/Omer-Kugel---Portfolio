@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framer-motions/variants.js";
 
 const projects = [
   {
@@ -37,7 +39,21 @@ function ProjectsMain() {
       <ProjectsText />
       <div className="lg:max-w-[900px] mx-auto px-10 mt-20 flex flex-col gap-20 sm:max-w-full">
         {projects.map((project, i) => {
-          return <SingleProject key={i} project={project} />;
+          return (
+            <motion.div
+              variants={
+                project.align === "left"
+                  ? fadeIn("left", 0.2)
+                  : fadeIn("right", 0.2)
+              }
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0 }}
+              key={i}
+            >
+              <SingleProject project={project} />
+            </motion.div>
+          );
         })}
       </div>
     </div>
