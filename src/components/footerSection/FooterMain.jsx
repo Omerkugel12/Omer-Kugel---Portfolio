@@ -11,9 +11,9 @@ function FooterMain() {
   ];
 
   return (
-    <main className="pb-20 pt-5 px-10 max-w-[1200px] mx-auto flex items-center justify-between">
+    <main className="pb-20 pt-5 px-10 max-w-[1200px] mx-auto flex items-center justify-between sm:flex-col lg:flex-row gap-10">
       <h2 className="text-xl text-grey">Omer Kugel - Full-Stack developer</h2>
-      <ul className="flex justify-center items-center gap-4">
+      <ul className="flex justify-center items-center gap-4 sm:flex-col lg:flex-row">
         {links.map((link) => {
           return (
             <li key={link.section} className="group">
@@ -27,7 +27,7 @@ function FooterMain() {
               >
                 {link.link}
               </Link>
-              <div className="mx-auto bg-grey w-0 group-hover:w-full h-[1px] transition-all duration-500 "></div>
+              <div className="mx-auto bg-grey w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
             </li>
           );
         })}
