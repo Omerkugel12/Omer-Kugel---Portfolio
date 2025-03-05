@@ -4,7 +4,7 @@ import ContactMeRight from "./ContactMeRight";
 
 function ContactMeMain() {
   return (
-    <main id="contact" className="max-w-[1200px] mx-auto pt-40 px-10">
+    <main id="contact" className="max-w-[1200px] mx-auto pt-8 px-10">
       <h2 className="text-cyan font-body text-6xl text-center mb-10">
         Contact Me
       </h2>

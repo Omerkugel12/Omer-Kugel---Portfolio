@@ -11,6 +11,8 @@ import { RiFirebaseLine } from "react-icons/ri";
 import { LiaNodeJs } from "react-icons/lia";
 import { FaGitAlt } from "react-icons/fa";
 import SingleSkill from "./SingleSkill";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framer-motions/variants.js";
 
 const skills = [
   { skill: "HTML", icon: AiOutlineHtml5 },
@@ -29,13 +31,17 @@ const skills = [
 function AllSkills() {
   return (
     <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
-      {skills.map((skill) => {
+      {skills.map((skill, i) => {
         return (
-          <SingleSkill
-            key={skill.skill}
-            text={skill.skill}
-            imgSvg={<skill.icon />}
-          />
+          <motion.div
+            key={i}
+            variants={fadeIn("up", `0.${i}`)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0 }}
+          >
+            <SingleSkill text={skill.skill} imgSvg={<skill.icon />} />
+          </motion.div>
         );
       })}
     </div>

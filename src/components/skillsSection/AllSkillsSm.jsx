@@ -10,6 +10,8 @@ import { SiMongodb } from "react-icons/si";
 import { RiFirebaseLine } from "react-icons/ri";
 import { LiaNodeJs } from "react-icons/lia";
 import { FaGitAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framer-motions/variants.js";
 
 const skills = [
   { skill: "HTML", icon: AiOutlineHtml5 },
@@ -30,14 +32,21 @@ function AllSkillsSm() {
     <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12">
       {skills.map((skill) => {
         return (
-          <div key={skill.skill} className="flex flex-col items-center">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0 }}
+            key={skill.skill}
+            className="flex flex-col items-center"
+          >
             <div className="text-7xl text-orange">
               <skill.icon />
             </div>
             <p className="text-center mt-4 text-white font-body">
               {skill.skill}
             </p>
-          </div>
+          </motion.div>
         );
       })}
     </div>
