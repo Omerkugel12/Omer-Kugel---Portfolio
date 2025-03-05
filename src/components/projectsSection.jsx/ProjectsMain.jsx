@@ -29,7 +29,7 @@ const projects = [
       website: "https://omer-kugel-portfolio.vercel.app/",
     },
     align: "left",
-    image: "/website-img-2.webp",
+    image: "/portfolio - devices.png",
   },
 ];
 
@@ -43,8 +43,8 @@ function ProjectsMain() {
             <motion.div
               variants={
                 project.align === "left"
-                  ? fadeIn("left", 0.2)
-                  : fadeIn("right", 0.2)
+                  ? fadeIn("left", `0.${i}`)
+                  : fadeIn("right", `0.${i}`)
               }
               initial="hidden"
               whileInView={"show"}

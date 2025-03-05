@@ -13,7 +13,7 @@ import SubSkills from "./components/skillsSection/SubSkills";
 
 function App() {
   return (
-    <main className="">
+    <main>
       <NavbarMain />
       <HeroMain />
       <HeroGradient />
