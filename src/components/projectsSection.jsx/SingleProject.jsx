@@ -6,7 +6,8 @@ function SingleProject({ project }) {
   const linkData = [
     { key: "githubFrontend", label: "GitHub (Frontend)", icon: <FaGithub /> },
     { key: "githubBackend", label: "GitHub (Backend)", icon: <FaGithub /> },
-    { key: "website", label: "View", icon: <AiOutlineGlobal /> },
+    { key: "github", label: "GitHub", icon: <FaGithub /> },
+    { key: "website", label: `View -  ${project.name}`, icon: <AiOutlineGlobal /> },
   ];
 
   return (
@@ -65,11 +66,11 @@ function SingleProject({ project }) {
       </div>
       <div className="max-h-[220px] sm:max-w-[300px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 border border-white relative">
         <div className="w-full h-full bg-cyan absolute opacity-50 hover:opacity-0 transition-all duration-500"></div>
-        <div>
+        <div className="">
           <img
             src={project.image}
             alt={project.description}
-            className="w-full h-full"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
