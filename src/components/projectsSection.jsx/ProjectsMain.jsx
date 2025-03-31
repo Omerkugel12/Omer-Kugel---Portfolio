@@ -9,7 +9,7 @@ const projects = [
     name: "Threads",
     year: "2025",
     description:
-    "A full-stack clone of the successful platform ‘Threads’ built with Next.js (SSR & CSR), TypeScript, MongoDB, Tailwind CSS, Recoil for state management, and Clerk for authentication. Features dynamic routing, server-side caching, and real-time updates. Deployed on Vercel.",
+    "A full-stack clone of the successful platform 'Threads' built with Next.js (SSR & CSR), TypeScript, MongoDB, Tailwind CSS, Recoil for state management, and Clerk for authentication. Features dynamic routing, server-side caching, and real-time updates. Deployed on Vercel.",
     links: {
       githubFrontend: "",
       githubBackend: null,
