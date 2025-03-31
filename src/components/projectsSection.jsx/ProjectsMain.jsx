@@ -6,6 +6,34 @@ import { fadeIn } from "../../framer-motions/variants.js";
 
 const projects = [
   {
+    name: "Threads",
+    year: "2025",
+    description:
+    "A full-stack clone of the successful platform ‘Threads’ built with Next.js (SSR & CSR), TypeScript, MongoDB, Tailwind CSS, Recoil for state management, and Clerk for authentication. Features dynamic routing, server-side caching, and real-time updates. Deployed on Vercel.",
+    links: {
+      githubFrontend: "",
+      githubBackend: null,
+      github: "https://github.com/Omerkugel12/Threads-clone",
+      website: "https://threads-clone-ivory.vercel.app/"
+    },
+    align: "right",
+    image: "/ThreadsScreens.png",
+  },
+  {
+    name: "Omer Kugel - Portfolio",
+    year: "2025",
+    description:
+    "My portfolio website to show my activity as a Full-Stack developer. Built with React.js and tailwind.CSS, deployed by 'Vercel'",
+    links: {
+      githubFrontend: "https://github.com/Omerkugel12/Omer-Kugel---Portfolio",
+      githubBackend: null,
+      github: null,
+      website: "https://omer-kugel-portfolio.vercel.app/",
+    },
+    align: "left",
+    image: "/portfolio - devices.png",
+  },
+  {
     name: "Booking clone",
     year: "2024",
     description:
@@ -13,23 +41,25 @@ const projects = [
     links: {
       githubFrontend: "https://github.com/Omerkugel12/Booking.com-----frontend",
       githubBackend: "https://github.com/Omerkugel12/Booking.com-----backend",
+      github: null,
       website: null,
     },
     align: "right",
     image: "/website-img-1.jpg",
   },
   {
-    name: "Omer Kugel - Portfolio",
-    year: "2025",
+    name: "Booking clone",
+    year: "2024",
     description:
-      "My portfolio website to show my activity as a Full-Stack developer. Built with React.js and tailwind.CSS, deployed by 'Vercel'",
+      " Booking.com clone is a full-stack web app for hotel searches and reservations (the site is a clone of Booking and does not actually process orders). Built with React (Vite), Node.js, Express, MongoDB, and SQL, it features Context API, Tailwind CSS, and ShadCN for a smooth user experience.",
     links: {
-      githubFrontend: "https://github.com/Omerkugel12/Omer-Kugel---Portfolio",
-      githubBackend: null,
-      website: "https://omer-kugel-portfolio.vercel.app/",
+      githubFrontend: "https://github.com/Omerkugel12/Booking.com-----frontend",
+      githubBackend: "https://github.com/Omerkugel12/Booking.com-----backend",
+      github: null,
+      website: null,
     },
-    align: "left",
-    image: "/portfolio - devices.png",
+    align: "right",
+    image: "/website-img-1.jpg",
   },
 ];
 
